@@ -14,7 +14,7 @@ public class DbCon {
 	  if (connection==null) {
 		  Class.forName("com.mysql.cj.jdbc.Driver");
 		  
-		  connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/ecommerce_cart" , "root" , "Vaibhavee@123");
+		  connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/ecommerce_cart" , "username" , "password"); // add your username and password of mysql
 		  System.out.print("connected");
 	}
 	  return connection;
